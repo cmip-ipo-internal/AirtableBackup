@@ -27,7 +27,35 @@ export AIRTABLE_BACKUP='/Users/name/directory'
 python -m airtable_backup --write --attachments
 ```
 
+## What is backed up?
+- Bases (each base in a separate directory)
+- Tables (these are saved as referenced csv files)
+- Attachments (these are in directories named as the tables)
+- Schema (the relationships and constraints of the fields in a table
+- Names and id of any views generated from a table
 
+## Important files, and file structure
+
+
+
+## case example and timing 
+
+
+
+
+
+```
+*******************************************************************************************************************
+ CMIP - International Project Office Backup
+*******************************************************************************************************************
+
+-------------------------------------------------------------------------------------------------------------------
+ Backup Location         : /<insert path here>/AirtableBackups/backup_230917
+ Save Tables|Attachments : True True
+ Total Elapsed Time (min): 1.7039594173431396
+ Total Backup Size       : 70.71 MB
+-------------------------------------------------------------------------------------------------------------------
+```
 
 
 
