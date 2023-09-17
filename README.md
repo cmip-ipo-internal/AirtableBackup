@@ -9,7 +9,7 @@ For the code to function, we must fist set up our credentials as environmental v
 
 e.g. 
 ```bash
-export AIRTABLE_API_KEY="<enter your api key here>""
+export AIRTABLE_API_KEY="<enter your api key here>"
 export AIRTABLE_BACKUP='/Users/name/directory'
 
 ```
