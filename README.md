@@ -1,6 +1,7 @@
 # AirtableBackup
 A library for backing up airtable data. 
 
+<img src='https://wcrp-cmip.org/wp-content/uploads/2023/08/CMIP_Logo_RGB_Negative.png' style='width:200px;float:right;position:absolute'/>
 
 ## Before use! 
 For the code to function, we must fist set up our credentials as environmental variables in the 
@@ -13,3 +14,11 @@ export AIRTABLE_BACKUP='/Users/name/directory'
 
 ```
 
+
+
+
+
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=cmip-ipo-internal/CVTool)](https://github.com/cmip-ipo-internal/CVTool/graphs/contributors)
