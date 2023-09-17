@@ -1,7 +1,12 @@
 # AirtableBackup
 A library for backing up airtable data. 
 
+<div>
 <img src='https://wcrp-cmip.org/wp-content/uploads/2023/08/CMIP_Logo_RGB_Negative.png' style='width:200px;float:right;position:absolute'/>
+<img src='https://wcrp-cmip.org/wp-content/uploads/2023/08/CMIP_Logo_RGB_Positive.png' style='width:200px;float:left;position:relative'/>
+<img src='https://wcrp-cmip.org/wp-content/uploads/2023/08/CMIP_Logo_RGB_Negative.png' style='width:200px;'/>
+<img src='https://wcrp-cmip.org/wp-content/uploads/2023/08/CMIP_Logo_RGB_Positive.png' style='width:200px;float:left;position:relative'/>
+</div>
 
 ## Setup
 For the code to function, we must fist set up our credentials as environmental variables in the 
