@@ -21,4 +21,4 @@ export AIRTABLE_BACKUP='/Users/name/directory'
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=cmip-ipo-internal/CVTool)](https://github.com/cmip-ipo-internal/CVTool/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=cmip-ipo-internal/AirtableBackup)](https://github.com/cmip-ipo-internal/AirtableBackup/graphs/contributors)
