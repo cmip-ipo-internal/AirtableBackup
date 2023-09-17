@@ -7,6 +7,8 @@ A library for backing up airtable data.
 <img src='https://wcrp-cmip.org/wp-content/uploads/2023/08/CMIP_Logo_RGB_Negative.png' style='width:200px;'/>
 <img src='https://wcrp-cmip.org/wp-content/uploads/2023/08/CMIP_Logo_RGB_Positive.png' style='width:200px;float:left;position:relative'/>
 </div>
+<a href="https://zenodo.org/badge/latestdoi/692810980"><img src="https://zenodo.org/badge/692810980.svg" alt="DOI"></a>
+
 
 ## Setup
 For the code to function, we must fist set up our credentials as environmental variables in the 
