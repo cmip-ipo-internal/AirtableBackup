@@ -17,6 +17,7 @@ import requests
 import pandas as pd
 from datetime import datetime
 import tqdm
+from io import StringIO
 from .helpers import *
 from .splash import hline
 
@@ -120,12 +121,14 @@ class AirtableBackup:
                     tjs = [{"airid": i['id'], **i['fields']} for i in
                             self.get(records % dict(baseId=base['id'], tableIdOrName=table['id']))['records']]
                     tname = clean_file_path_string(table['name'])
-                    csv_data = pd.read_json(json.dumps(tjs)).to_csv()
+                    csv_data = pd.read_json(StringIO(json.dumps(tjs)))
+                    
+                    csv_data = csv_data.to_csv(escapechar='\\')
+             
 
                     location = f"{basedir}/{tname}.csv"
                     with open(location, 'w') as f:
                         f.write(csv_data)
-
                     if self.ATTACHMENTS:
                         attach_table(csv_data, basedir, tname)
 
@@ -142,7 +145,7 @@ class AirtableBackup:
         end_time = time.time()
         elapsed_time_seconds = end_time - start_time
         elapsed_time_minutes = elapsed_time_seconds / 60
-
+# /     
 
         hline()
         print( ' CMIP - International Project Office Backup')
@@ -155,3 +158,5 @@ class AirtableBackup:
         print(f' Total Elapsed Time (min): {elapsed_time_minutes}')
         print(f' Total Backup Size       : {dir_size(base_path)}')
         hline('-')
+        
+        
