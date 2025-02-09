@@ -80,7 +80,8 @@ class AirtableBackup:
         # Initialize the master entry for the backup
         master = entry(dict(name='CMIP-IPO', description='Top level of all the bases.'))
 
-        # Get information about all bases
+        # # Get information about all bases
+        # make sure that correct bases are added to 'backup' key
         data_bases = self.get(bases)['bases']
         assert data_bases
 
